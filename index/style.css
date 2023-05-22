@@ -1,0 +1,13 @@
+#wholepage{
+    border: 12px;
+    border-style: dashed;
+    border-color: blueviolet;
+    width: 90%;
+    background-image: none;
+    background-color: bisque;
+}
+
+div{
+    margin-left: auto;
+    margin-right: auto;
+}
