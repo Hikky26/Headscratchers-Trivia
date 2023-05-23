@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Headscratchers';
+    src: url('Exo-VariableFont_wght.ttf');
+}
+*{
+    font-family: 'Headscratchers';
+
+}
+#wholepage{
+    border: 12px;
+    border-style: dashed;
+    border-color: blueviolet;
+    width: 90%;
+    background-image: none;
+    background-color: bisque;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#navContainer{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}

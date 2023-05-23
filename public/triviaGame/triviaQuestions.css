@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'TriviaFont';
+    src: url('Exo-VariableFont_wght.ttf');
+}
+*{
+    font-family: 'TriviaFont';
+    margin: 0;
+    padding: 0;
+    color: black;
+    
+}
+
+#triviaContainer{
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    border: 12px groove aqua;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+h1,h6{
+    margin-bottom: 0rem;
+
+}
+h6{
+    /* display: inline; */
+    margin-right: 5rem;
+}
+.hide {
+    display: none;
+}

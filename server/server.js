@@ -1,14 +1,15 @@
+require('dotenv').config()
+const express = require('express')
+const app = express()
+const cors = require('cors')
+const {SERVER_PORT} = process.env
 
+const {seed} = require('./seed')
+const{} = require
 
+app.use(express.json())
 
-
-
-
-
-
-
-
-
+app.listen(5500, () => console.log('Server running on 5500'))
 
 
 // // Function to decode HTML entities
