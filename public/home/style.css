@@ -65,7 +65,7 @@ img{
 button{
     display: inline-block;
     padding: 5px;
-    font-size: 16px;
+    font-size: 24px;
     width: auto;
     text-align: center;
     text-decoration: none;
@@ -106,9 +106,9 @@ td:last-child{
     width: 150px;
     background-color: #5d2c96;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 40px;
     color: whitesmoke;
-    padding: 5%;
+    padding: 2px;
     
 }
 #startTrivia:hover{
@@ -202,4 +202,10 @@ h1{
   19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% { 
     opacity:0.4; text-shadow: none; 
   }
+}
+body{
+    zoom: 80%;
+}
+select{
+    font-size: 20px;
 }
