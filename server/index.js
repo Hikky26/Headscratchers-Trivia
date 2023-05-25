@@ -5,7 +5,7 @@ const cors = require('cors')
 
 const {SERVER_PORT} = process.env
 
-const {seed} = require('./seed.js')
+// const {seed} = require('./seed.js')
 const{} = require
 
 
@@ -17,7 +17,7 @@ app.use(cors())
 
 
 
-app.post('/seed', seed)
+// app.post('/seed', seed)
 
 // //feature 1: Get all the characters the play has earned
 // app.get("/api/playerTokens", getPlayerTokens);
@@ -40,18 +40,5 @@ app.get("/api/earnedTokens", getEarnedToken)
 app.listen(SERVER_PORT, () => console.log(`Server running on ${SERVER_PORT}`))
 
 
-// // // Function to decode HTML entities
-// // function decodeHTMLEntities(text) {
-// //     const element = document.createElement('div');
-// //     element.innerHTML = text;
-// //     return element.innerText;
-// //   }
-  
-// //   // Decoding the question and answers
-// //   response.question = decodeHTMLEntities(response.question);
-// //   response.correct_answer = decodeHTMLEntities(response.correct_answer);
-// //   response.incorrect_answers = response.incorrect_answers.map(answer => decodeHTMLEntities(answer));
-  
-// //   console.log(response);
 
 
