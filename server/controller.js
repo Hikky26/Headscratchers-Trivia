@@ -3,7 +3,7 @@ const {CONNECTION_STRING} = process.env;
 const { all } = require('axios');
 const Sequelize = require ('sequelize')
 
-const sequelize = new Sequelize(CONNECTION_STRING,{
+const sequelize = new Sequelize(`${CONNECTION_STRING}`,{
     dialect:'postgres',
     dialectOptions: {
         ssl: {
