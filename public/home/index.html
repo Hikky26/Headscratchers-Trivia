@@ -8,74 +8,87 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="navContainer">
+        <a id="home button" href="index.html">Home</a>
+        <a id="about button" href="../about/about.html">About</a>
+        <!-- <a id ="charinfo" href="../characters/characters.html">Characters</a> -->
+    </div>
     <div id="wholepage">
-        <div id="navContainer">
-            <a id="home button" href="index.html">Home</a>
-            <a id="about button" href="about.html">About</a>
-            <a id ="charinfo" href="characters.html">Characters</a>
+        <div id="titlecontainer">
+            <div id="div">
+                <p id="trivia">Tr<span>iv</span>ia</p>
+                <p id="headscratchers">HEADS<span>CRAT</span><span>CHERS</span></p>
+              </div>
+            <!-- <h1>Trivia Headscratchers!</h1> -->
         </div>
-        <div id="title container">
-            <h1>Trivia Headscratchers!</h1>
-        </div>
-        <div id="meme container">
-            <button>Click me!</button>
-            <div>
-                <img src="https://media1.giphy.com/media/1d5Zn8FqmJqApu4hNU/giphy.gif?cid=ecf05e47wm999l19ot46nrt7vp5rmcb469wg6b5y0dapfil8&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Man laughing and spitting out water">
+        <div class="sidebyside" id="topContainer">
+            <div id="startTriviaContainer">
+                <h2>Start Trivia</h2>
+                <a id="startTrivia" href="../triviaGame/triviaQuestions.html">Start</a>
+            </div>
+            <div id="highScores">
+                <div>
+                    <button id="highscorebtn" type="button">View High Scores</button>
+                    <div id="scoresContainer">
+                        ~High Scores~
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="practiceContainer">
+                <h2>Practice Trivia</h2>
+                <form>
+                    <select id="practiceCategory">
+                        <option value="">Any Category</option>
+                        <option value="9">General Knowledge</option>
+                        <option value="10">Books</option>
+                        <option value="11">Film</option>
+                        <option value="12">Music</option>
+                        <option value="13">Musicals and Theaters</option>
+                        <option value="14">Television</option>
+                        <option value="15">Video Games</option>
+                        <option value="16">Board Games</option>
+                        <option value="17">Science and Nature</option>
+                        <option value="18">Computers</option>
+                        <option value="19">Math</option>
+                        <option value="20">Mythology</option>
+                        <option value="21">Sports</option>
+                        <option value="22">Geography</option>
+                        <option value="23">History</option>
+                        <option value="24">Politics</option>
+                        <option value="25">Art</option>
+                        <option value="26">Celebrities</option>
+                        <option value="27">Animals</option>
+                        <option value="28">Vehicles</option>
+                        <option value="29">Comics</option>
+                        <option value="30">Gadgets</option>
+                        <option value="31">Anime and Manga</option>
+                        <option value="32">Cartoon and Animations</option>
+                    </select>
+                    <br>
+                    <select id="practiceDifficulty">
+                        <option value="">Any Difficulty</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                    <br>
+                    <button type="submit" id="submitPracticeTrivia">
+                        Play Practice Trivia
+                    </button>
+                    <br>
+                </form>
             </div>
         </div>
-        <div id="CTrophies">
-            <h2>Character Trophies</h2>
-        </div>
-        <div id="startTriviaContainer">
-            <h2>Start Trivia</h2>
-            <button id="startTrivia">Start</button>
-        </div>
-        <div id="practiceContainer">
-            <h2>Practice Trivia</h2>
-            <form>
-                <select id="practiceCategory">
-                    <option value="any">Any Category</option>
-                    <option value="9">General Knowledge</option>
-                    <option value="10">Books</option>
-                    <option value="11">Film</option>
-                    <option value="12">Music</option>
-                    <option value="13">Musicals and Theaters</option>
-                    <option value="14">Television</option>
-                    <option value="15">Video Games</option>
-                    <option value="16">Board Games</option>
-                    <option value="17">Science and Nature</option>
-                    <option value="18">Computers</option>
-                    <option value="19">Math</option>
-                    <option value="20">Mythology</option>
-                    <option value="21">Sports</option>
-                    <option value="22">Geography</option>
-                    <option value="23">History</option>
-                    <option value="24">Politics</option>
-                    <option value="25">Art</option>
-                    <option value="26">Celebrities</option>
-                    <option value="27">Animals</option>
-                    <option value="28">Vehicles</option>
-                    <option value="29">Comics</option>
-                    <option value="30">Gadgets</option>
-                    <option value="31">Anime and Manga</option>
-                    <option value="32">Cartoon and Animations</option>
-                </select>
-                <br>
-                <select id="practiceDifficulty">
-                    <option value="any">Any Difficulty</option>
-                    <option value="easy">Easy</option>
-                    <option value="medium">Medium</option>
-                    <option value="hard">Hard</option>
-                </select>
-                <br>
-                <button type="submit" id="submitPracticeTrivia">
-                    Play Practice Trivia
-                </button>
-                <br>
-            </form>
+        <div class="sidebyside" id="bottomcontainer">
+            <div id="CTrophies">
+                <h2 >Character Trophies</h2>
+                <div id="charimageContainer"></div>
+                <img src="https://media4.giphy.com/media/3oEduNyqHoMFP9oVXy/giphy.gif?cid=ecf05e47kcbjo2luxkcx4pwmu33b420544ya1ttidumswnd1&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Brain Torch">
+            </div>
         </div>
     </div>
-    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="../../node_modules/axios/dist/axios.min.js"></script>
     <script src="trivia-home.js"></script>
 </body>
 </html>

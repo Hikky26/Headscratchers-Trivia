@@ -1,11 +1,45 @@
+@font-face {
+    font-family: 'NonItalicHeadscratchers';
+    src: url('../Exo-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Headscratchers';
+    src: url('../Exo-Italic-VariableFont_wght.ttf');
+}
 body{
     background-image: url(https://techcrunch.com/wp-content/uploads/2021/04/GettyImages-1282124793.jpg?w=730&crop=1);
     background-repeat: repeat;
     /* background-size: cover; */
     /* background-color: rgba(255, 255, 255, 0.5); */
 }
+h1,h2,h3{
+    background-color: rgba(211, 187, 228, 0.836);
+    margin: 10px;
+    padding: 10px;
+}
+*{
+    color:rgb(23, 10, 34);
+    font-family: 'NonItalicHeadscratchers';
+    
+}
 div{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+}
+#navContainer{
+    display: flex;
+    background-color: rgb(210, 173, 245);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+a{
+    font-size: 20px;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 5px;
+
 }

@@ -1,34 +1,92 @@
 @font-face {
     font-family: 'TriviaFont';
-    src: url('Exo-VariableFont_wght.ttf');
+    src: url('../Exo-VariableFont_wght.ttf');
 }
+
 *{
     font-family: 'TriviaFont';
-    margin: 0;
+    margin: 3px;
     padding: 0;
     color: black;
     
 }
-
-#triviaContainer{
-    width: 100vw;
-    height: 75vh;
+body{
     display: flex;
-    border: 12px groove aqua;
     flex-direction: column;
+    margin: 0;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+}
+#triviaContainer{
+    width: 75%;
+    height: 80%;
+    border: 12px groove aqua;
+    flex-direction: column;
+    background-color: rgb(229, 244, 245);
     
 }
-h1,h6{
+#questionCardHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1, h6 {
     margin-bottom: 0rem;
 
 }
-h6{
-    /* display: inline; */
-    margin-right: 5rem;
+h1 {
+    font-size: 200%;
+    text-align:center;
 }
-.hide {
-    display: none;
+h6 {
+    /* display: inline; */
+    font-size: 100%;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: row;
+    color: #666;
+    font-weight: 300;
+}
+#question{
+    display: flex
+}
+button{
+    color: azure;
+    width: auto;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'NonItalicHeadscratchers';
+    border: solid 2px;
+    border-radius: 10px;
+    background-color: rgb(29, 161, 194);
+    box-shadow: 0 10px rgb(173, 158, 194);
+    text-align: center;
+    padding:12px;
+    justify-content: center;
+}
+button:hover{
+    background-color: rgba(0, 255, 255, 0.555);
+}
+button:active {
+    background-color: #9780d6;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+#formParent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+}
+img{
+    height: 60px;
+    width: 60px;
 }
