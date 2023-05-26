@@ -47,13 +47,11 @@ function createTable(data) {
             <tr>
                 <th>Name</th>
                 <th>Score</th>
-                <th>Date</th>
             </tr>`
     for(let i=0; i<data.length; i++){
         tableHTML += `<tr>
             <td>${data[i].player_name}</td>
             <td>${data[i].score}</td>
-            <td>${data[i].date_played}</td>
          </tr>`;
     }
     tableHTML += `</table>`;
@@ -97,7 +95,7 @@ function getAllTokens(){
 
 function loadTrivia (event){
     event.preventDefault()
-    let apiURL = 'https://opentdb.com/api.php?amount=25'
+    let apiURL = 'https://opentdb.com/api.php?amount=50'
     sessionStorage.setItem('trivia', apiURL)
     window.location.href = `../triviaGame/triviaQuestions.html?apiURL=${encodeURIComponent(apiURL)}`;
 }

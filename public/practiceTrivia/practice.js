@@ -37,7 +37,7 @@ function displayNextQuestion(){
     if(questionSet.length === 0){
         questionContainer.innerHTML = `
         <h1>Game Over</h1>
-        <h3>Return Home to keep practicing, or play Trivia to get on the scoreboard"</h3>
+        <h3>Return Home to keep practicing, or play Trivia to get on the scoreboard</h3>
         <h3>Total Score: ${numCorrect}/${counter-1}</h3>
         `;
         return;

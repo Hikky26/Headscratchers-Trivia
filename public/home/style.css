@@ -85,22 +85,29 @@ button:active {
     transform: translateY(4px);
 }
 #scoresContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 22px;
     font-weight: 800;
     overflow-y: auto;
     height: 20vh;
 }
 tbody{
-    width: 400px;
+    width: 300px;
 }
 table, th, td {
     border: 1px solid;
     font-size: 16px;
     font-weight: 400;
+    width: 200px;
+}
+tr{
+    width: auto;
 }
 td:last-child{
-    width: 90px;
-    font-size: 10px;
+    width: 100px;
+    font-size: 20px;
 }
 #startTrivia{
     width: 150px;

@@ -17,7 +17,7 @@ let playerAns = "";
 let score= 0;
 let streak = 0;
 let bonus = 5;
-let lives = 2;
+let lives = 3;
 
 
 axios.get(dataSaved)
@@ -127,6 +127,10 @@ function checkAnswer (playerAns){
     if (playerAns === answer) {
         numCorrect++; // Increment the score if the answer is correct
         streak++
+        if(streak >= 3 && lives < 5){
+            lives ++
+            displayLives()
+        }
         if (streak >= bonus){
             score += 10
 
